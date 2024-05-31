@@ -1,0 +1,120 @@
+[
+  {
+    "id": "UI-TC06",
+    "description": "Create New Contact (Valid Data)",
+    "steps": [
+      "Click 'Create Contact'",
+      "Enter valid contact details (all fields)",
+      "Click 'Submit'"
+    ],
+    "expectedResult": "Contact is successfully added to the list and redirected to contact list page.",
+    "isRegression": true
+  },
+  {
+    "id": "UI-TC07",
+    "description": "Create New Contact (Invalid Email)",
+    "steps": [
+      "Click 'Create Contact'",
+      "Enter invalid email",
+      "Click 'Submit'"
+    ],
+    "expectedResult": "Appropriate error message is displayed (e.g., 'Invalid email format').",
+    "isRegression": false
+  },
+  {
+    "id": "UI-TC08",
+    "description": "Create New Contact (Missing Required Fields)",
+    "steps": [
+      "Click 'Create Contact'",
+      "Leave required fields empty",
+      "Click 'Submit'"
+    ],
+    "expectedResult": "Appropriate error messages are displayed for each missing field.",
+    "isRegression": false
+  },
+  {
+    "id": "UI-TC09",
+    "description": "View Contact Details",
+    "steps": [
+      "Click on a contact in the list"
+    ],
+    "expectedResult": "Contact details are displayed in a view mode.",
+    "isRegression": true
+  },
+  {
+    "id": "UI-TC10",
+    "description": "Update Contact (Valid Data)",
+    "steps": [
+      "Click on a contact",
+      "Modify contact details",
+      "Click 'Submit'"
+    ],
+    "expectedResult": "Contact details are updated in the list and view.",
+    "isRegression": true
+  },
+  {
+    "id": "UI-TC11",
+    "description": "Update Contact (Invalid Email)",
+    "steps": [
+      "Click on a contact",
+      "Enter invalid email",
+      "Click 'Submit'"
+    ],
+    "expectedResult": "Appropriate error message is displayed (e.g., 'Invalid email format').",
+    "isRegression": false
+  },
+  {
+    "id": "UI-TC12",
+    "description": "Update Contact (Missing Required Fields)",
+    "steps": [
+      "Click on a contact",
+      "Delete required fields",
+      "Click 'Submit'"
+    ],
+    "expectedResult": "Appropriate error messages are displayed for each missing field.",
+    "isRegression": false
+  },
+  {
+    "id": "UI-TC13",
+    "description": "Return to Contact List from Contact Details",
+    "steps": [
+      "Click on a contact to view details",
+      "Click on a 'Return to Contact List'"
+    ],
+    "expectedResult": "User is returned to the contact list page.",
+    "isRegression": true
+  },
+  {
+    "id": "UI-TC14",
+    "description": "Delete Contact (Cancel Confirmation)",
+    "steps": [
+      "Click on a contact",
+      "Click 'Delete'",
+      "Cancel confirmation"
+    ],
+    "expectedResult": "Contact is not deleted.",
+    "isRegression": false
+  },
+  {
+    "id": "UI-TC15",
+    "description": "Delete Contact",
+    "steps": [
+      "Click on a contact",
+      "navigates to contact details page",
+      "Click 'Delete Contact'",
+      "Dialog popups",
+      "Confirm deletion"
+    ],
+    "expectedResult": "Contact is removed from the list.",
+    "isRegression": true
+  },
+  {
+    "id": "UI-TC16",
+    "description": "Logout",
+    "steps": [
+      "Click on the 'Logout' button"
+    ],
+    "expectedResult": "User is redirected to the login page",
+    "isRegression": true
+  }
+]

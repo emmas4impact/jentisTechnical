@@ -1,0 +1,22 @@
+[
+    {
+        "id": "UI-TC04",
+        "description": "Successful Login with Valid Credentials",
+        "steps": [
+            "Enter valid credentials (obtained from successful signup)", 
+            "Click 'Login'"
+        ],
+        "expectedResult": "User is redirected to the contact list page.",
+        "isRegression": true
+    },
+    {
+        "id": "UI-TC05",
+        "description": "Failed Login (Invalid Credentials)",
+        "steps": [
+            "Enter invalid credentials", 
+            "Click 'Login'"
+        ],
+        "expectedResult": "Incorrect username or password",
+        "isRegression": true 
+    }
+]

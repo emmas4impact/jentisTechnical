@@ -1,0 +1,38 @@
+[
+    {
+        "id": "UI-TC01",
+        "description": "Successful Signup",
+        "steps": [
+            "Enter valid first name (using Faker)",
+            "Enter valid last name (using Faker)",
+            "Enter valid email (using Faker)",
+            "Enter valid password (using Faker)",
+            "Click 'Signup'"
+        ],
+        "expectedResult": "User is automatically redirected to the contact list page.",
+        "isRegression": true
+    },
+    {
+        "id": "UI-TC02",
+        "description": "Failed Signup (Invalid Email)",
+        "steps": [
+            "Enter valid first name (using Faker)",
+            "Enter valid last name (using Faker)",
+            "Enter invalid email",
+            "Enter valid password (using Faker)",
+            "Click 'Signup'"
+        ],
+        "expectedResult": "Appropriate error message is displayed (e.g., 'Invalid email format').",
+        "isRegression": false
+    },
+    {
+        "id": "UI-TC03",
+        "description": "Failed Signup (Empty Fields)",
+        "steps": [
+            "Leave all fields empty",
+            "Click 'Signup'"
+        ],
+        "expectedResult": "Appropriate error messages are displayed for each missing field.",
+        "isRegression": false
+    }
+]
